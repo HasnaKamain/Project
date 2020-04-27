@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import { Card } from "react-bootstrap";
 
 
 const Book = ({book}) => {
@@ -13,7 +13,6 @@ const Book = ({book}) => {
             </p>
           </blockquote>
           <a href={'/books/'+ book.isbn}>Details...</a>
-
         </Card.Body>
       </Card>
   )

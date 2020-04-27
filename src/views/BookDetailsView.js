@@ -28,7 +28,7 @@ const BookDetailsView = () => {
     <div className="col">
         {books.map(book =>
             <Container style={{marginTop: '20px'}}>
-                <Button variant="dark" style={{float:'right', marginBottom:'20px'}}>Edit</Button>{' '}
+             <a href={'/books/edit/'+ book.isbn}><Button variant="dark" style={{float:'right', marginBottom:'20px'}}>Edit</Button></a>{' '}
                 <Card border="dark" style={{ width: '70rem'}}>
                     <Card.Body>
                         <Card.Title><b>{book.title}</b>( {book.publisher}{book.publicationDate} )</Card.Title>
